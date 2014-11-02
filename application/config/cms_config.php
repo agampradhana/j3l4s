@@ -1,3 +1,3 @@
 <?PHP
-$config['site_name']='My Awesome Site';
+$config['site_name']='Jelajah Asia';
 ?>

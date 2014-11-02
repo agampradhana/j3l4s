@@ -2,7 +2,7 @@
 class Admin_Controller extends MY_Controller{
 	function __construct(){
 		parent::__construct();
-		$this->data['meta_title']='My Awesom CMS';
+		$this->data['meta_title']=config_item('site_name');
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 		$this->output->set_header('Last-Modified:'.gmdate('D, d M Y H:i:s').'GMT');
@@ -22,7 +22,7 @@ class Admin_Controller extends MY_Controller{
 			}
 		}
 
-		
+
 		$menu = array(
 			array('name'=>'dashboard','text'=>'Dashboard','fa'=>'fa-dashboard'),
 			array('name'=>'product','text'=>'Product','fa'=>'fa-star'),
@@ -31,8 +31,8 @@ class Admin_Controller extends MY_Controller{
 
 		$this->data['menu']=$this->arrayToObject($menu);
 	}
-	
-	
-	
-	
+
+
+
+
 }

@@ -9,8 +9,8 @@
     <!-- Bootstrap -->
     <link href="<?PHP echo site_url('css/bootstrap.min.css'); ?>" rel="stylesheet">
     <!-- Add custom CSS here -->
-    <link href="<?PHP echo site_url('css/sb-admin.css') ?>" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="<?PHP echo site_url('css/sb-admin-2.css') ?>" rel="stylesheet">
+    <link href="<?PHP echo site_url('font-awesome-4.1.0/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
     <!-- Page Specific CSS -->
   	<link href="<?PHP echo site_url('css/login.css'); ?>" rel="stylesheet">
     </head>
@@ -20,10 +20,10 @@
   <div class="panel-body">
   <?PHP if($this->session->flashdata('error')!=''): ?>
   	<div class="alert alert-danger error-log">
-  		<i class="glyphicon glyphicon-exclamation-sign"></i> <strong>Ops!</strong> <?PHP echo $this->session->flashdata('error'); ?> 
+  		<i class="glyphicon glyphicon-exclamation-sign"></i> <strong>Ops!</strong> <?PHP echo $this->session->flashdata('error'); ?>
 	</div>
     <?PHP
-	
+
 	endif;
 	?>
       <form class="form-signin" role="form" method="post" action="admin/user/login">
@@ -53,6 +53,6 @@
 </div>
     </div> <!-- /container -->
 
-<?PHP 
+<?PHP
 $this->load->view('admin/components/page_tail');
 ?>
