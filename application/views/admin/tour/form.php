@@ -32,15 +32,21 @@
             endforeach;
             ?>
           </div>
-          <input type="text" class="form-control" name="new_tag" id="new_tag" placeholder="Enter New Tag">
+          <div class="row">
+            <div class="col-lg-6">
+              <input type="text" class="form-control" name="new_tag" id="new_tag" placeholder="Enter New Tag">
+            </div>
+          </div>
+          <p class="help-block">Example : bali,holiday,vacation</p>
         </div>
 
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-success">Submit</button>
       </div>
 
       <div class="col-lg-6">
         <div class="form-group">
           <label for="exampleInputEmail1">Countries</label>
+          <div class="checkbox">
           <select class="form-control" id="countries" name="id_country"  multiple="multiple">
             <?PHP
             foreach($countries as $ctry):
@@ -50,6 +56,7 @@
             endforeach;
             ?>
           </select>
+        </div>
         </div>
 
 

@@ -23,10 +23,24 @@ class Tour extends Admin_Controller{
   }
 
   public function save(){
-    $data['id_tag']=implode(",",$this->input->post('id_tag'));
+
     $data['tour_package']=$this->input->post('tour_package');
     $data['description']=$this->input->post('description');
     $data['id_country']=implode(",",$this->input->post('id_country'));
+
+    $id_tags= $this->input->post('id_tag');
+
+    if($this->input->post('new_tag')!=""){
+      $new_tag=explode(",",$this->input->post('new_tag'));
+      foreach($new_tag as $nt){
+        $data_tag['tag']=trim($nt);
+        $nid=$this->tags_model->save($data_tag);
+        array_push($id_tags,$nid);
+      }
+    }
+
+    $data['id_tag']=implode(",",$id_tags);
+
 
     $this->tours_model->save($data);
 

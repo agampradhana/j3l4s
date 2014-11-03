@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin</title>
+    <title>Jelajah Asia Admin</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="<?PHP echo site_url('css/bootstrap.min.css')?>" rel="stylesheet">
