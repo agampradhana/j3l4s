@@ -8,7 +8,7 @@
 <div class="row">
   <div class="col-lg-12">
     <div class="btn-group">
-      <a href="button" class="btn btn-primary">Add New</a>
+      <a href="tour/add" class="btn btn-primary">Add New</a>
       <a href="button" class="btn btn-primary">Move to Trash</a>
       <a href="button" class="btn btn-primary">Hide</a>
       <a href="button" class="btn btn-primary">Publish</a>
