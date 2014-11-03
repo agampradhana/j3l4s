@@ -157,7 +157,7 @@
                             <a class="<?PHP echo ($this->router->fetch_class()=='dashboard')?'active':'' ?>" href="<?PHP echo site_url('admin/dashboard/')?>"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a class="<?PHP echo ($this->router->fetch_class()=='tour')?'active':'' ?>" href="<?PHP echo site_url('admin/tour/')?>"><i class="fa fa-dashboard fa-fw"></i> Tour</a>
+                            <a class="<?PHP echo ($this->router->fetch_class()=='tour')?'active':'' ?>" href="<?PHP echo site_url('admin/tour/')?>"><i class="fa fa-briefcase fa-fw"></i> Tour</a>
                         </li>
                     </ul>
                 </div>
