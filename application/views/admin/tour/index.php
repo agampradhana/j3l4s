@@ -9,7 +9,7 @@
   <div class="col-lg-12">
     <div class="btn-group">
       <a href="<?PHP echo site_url('admin/tour/add'); ?>" class="btn btn-primary">Add New</a>
-      <a href="button" class="btn btn-primary">Move to Trash</a>
+      <a href="button" class="btn btn-primary">Delete</a>
       <a href="button" class="btn btn-primary">Hide</a>
       <a href="button" class="btn btn-primary">Publish</a>
     </div>
@@ -17,7 +17,7 @@
     <table class="table table-striped">
       <thead>
         <tr>
-          <th>No</th>
+          <th><input type="checkbox" /></th>
           <th>Package</th>
           <th>Description</th>
         </tr>
@@ -27,7 +27,7 @@
         foreach($tours as $tour){
           ?>
           <tr>
-            <td><?PHP echo $tour->id; ?></td>
+            <td><input type="checkbox" value="<?PHP echo $tour->id; ?>" /></td>
             <td><?PHP echo $tour->tour_package; ?></td>
             <td><?PHP echo $tour->description; ?></td>
           </tr>

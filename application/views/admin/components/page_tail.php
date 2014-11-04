@@ -20,7 +20,9 @@
     <!-- Custom Theme JavaScript -->
     <script src="<?PHP echo site_url('js/sb-admin-2.js')?>"></script>
     <script src="<?PHP echo site_url('js/plugins/multiselect/bootstrap-multiselect.js') ?>"></script>
+    <script src="<?PHP echo site_url('js/jquery.finderSelect.min.js') ?>"></script>
     <script src="<?PHP echo site_url('js/script.js') ?>"></script>
+
 
 </body>
 

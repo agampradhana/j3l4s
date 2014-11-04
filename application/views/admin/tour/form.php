@@ -33,7 +33,7 @@
             ?>
           </div>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-8">
               <input type="text" class="form-control" name="new_tag" id="new_tag" placeholder="Enter New Tag">
             </div>
           </div>
@@ -44,6 +44,21 @@
       </div>
 
       <div class="col-lg-6">
+        <div class="form-group">
+          <label for="categories">Categories</label>
+          <div class="checkbox">
+            <select id="categories" name="id_category" multiple="multiple">
+              <?PHP
+              foreach($categories as $ctg):
+                ?>
+                <option value="<?PHP echo $ctg->id ?>"><?PHP echo $ctg->category; ?></option>
+                <?PHP
+              endforeach;
+              ?>
+            </select>
+          </div>
+        </div>
+
         <div class="form-group">
           <label for="exampleInputEmail1">Countries</label>
           <div class="checkbox">
@@ -56,6 +71,18 @@
             endforeach;
             ?>
           </select>
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="input-group">
+                <span class="input-group-addon">$</span>
+                  <input type="text" class="form-control" name="price" id="price" placeholder="Package Price">
+                <span class="input-group-addon">/psn</span>
+              </div>
+            </div>
+          </div>
         </div>
         </div>
 

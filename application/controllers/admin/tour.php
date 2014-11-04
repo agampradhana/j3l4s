@@ -15,6 +15,7 @@ class Tour extends Admin_Controller{
     $this->data['content']='admin/tour/form';
     $this->data['title']="Add New Tour Package";
     $this->data['tags']= $this->tags_model->get();
+    $this->data['categories']= $this->categories_model->get();
 
     $qc=$this->db->query("SELECT id,name FROM countrys_int WHERE continent='Asia'");
     $this->data['countries']= $qc->result();
@@ -27,7 +28,8 @@ class Tour extends Admin_Controller{
     $data['tour_package']=$this->input->post('tour_package');
     $data['description']=$this->input->post('description');
     $data['id_country']=implode(",",$this->input->post('id_country'));
-
+    $data['id_category']=implode(",",$this->input->post('id_category'));
+    $data['price']=$this->input->post('price');
     $id_tags= $this->input->post('id_tag');
 
     if($this->input->post('new_tag')!=""){

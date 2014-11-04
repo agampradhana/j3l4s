@@ -343,3 +343,8 @@ table.dataTable thead .sorting:after {
 .panel-yellow a:hover {
     color: #df8a13;
 }
+
+tr.selected {
+    background-color: #3875D7 !important;
+    color: #FFF;
+}
